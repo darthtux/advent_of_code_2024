@@ -31,3 +31,15 @@ def logWrite(output):
     currentDateTime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     logFile.write(currentDateTime + ": " + output + '\n')
+
+def increasing(i, j):
+    returnCode = False
+    if int(j) > int(i): 
+        returnCode = True
+    return returnCode
+
+def decreasing(i, j):
+    returnCode = False
+    if int(j) < int(i): 
+        returnCode = True
+    return returnCode
